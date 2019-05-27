@@ -1,8 +1,15 @@
+/* Vendor */
 import * as React from 'react';
 import {storiesOf} from '@storybook/react'
 
+/* Component */
 import {Input} from './Input'
 
+/* Utils */
+
+/* Styles */
+
+/* Stories */
 storiesOf('Input', module)
   .add('default', () => (
     <Input />

@@ -1,5 +1,5 @@
 /* Vendors */
-import React, {ReactChildren} from 'react'
+import React from 'react'
 
 /* Styles */
 import * as Styled from './Link.styled'
@@ -9,11 +9,7 @@ import * as Styled from './Link.styled'
 /* Utils */
 
 /* Types */
-type Props = {
-  className?: string,
-  to?: string,
-  children: string | ReactChildren,
-}
+import {Props} from './Link.types'
 
 /* Component */
 export const Link = ({className, to, children}: Props) => {
