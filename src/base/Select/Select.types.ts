@@ -1,6 +1,8 @@
 /* Vendor types */
 
 /* Types */
+import {ChangeEvent} from 'react'
+
 export interface Props {
   className?: string,
   items: Array<OptionType>
@@ -8,6 +10,7 @@ export interface Props {
   multiple?: boolean,
   disabled?: boolean,
   placeholder?: string,
+  onChange?: (event: ChangeEvent<HTMLSelectElement>) => void,
 }
 
 export type OptionType = {
