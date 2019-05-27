@@ -17,7 +17,6 @@ export const Textarea = ({className, value, disabled = false, placeholder}: Prop
     className={className}
     disabled={disabled}
     placeholder={placeholder}
-    value={value}>
-  </Styled.Textarea>
+    value={value} />
 )
 
