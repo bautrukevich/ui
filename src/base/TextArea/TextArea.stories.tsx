@@ -3,7 +3,7 @@ import * as React from 'react';
 import {storiesOf} from '@storybook/react'
 
 /* Component */
-import {TextArea} from './Textarea'
+import {TextArea} from './TextArea'
 
 /* Utils */
 
