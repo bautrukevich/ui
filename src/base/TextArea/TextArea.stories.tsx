@@ -3,23 +3,23 @@ import * as React from 'react';
 import {storiesOf} from '@storybook/react'
 
 /* Component */
-import {Textarea} from './Textarea'
+import {TextArea} from './Textarea'
 
 /* Utils */
 
 /* Styles */
 
 /* Stories */
-storiesOf('Textarea', module)
+storiesOf('TextArea', module)
   .add('default', () => (
-    <Textarea />
+    <TextArea />
   ))
   .add('with value', () => (
-    <Textarea value='Some text'/>
+    <TextArea value='Some text'/>
   ))
   .add('disabled', () => (
-    <Textarea disabled />
+    <TextArea disabled />
   ))
   .add('with placeholder', () => (
-    <Textarea placeholder='Field name here or tip' />
+    <TextArea placeholder='Field name here or tip' />
   ))

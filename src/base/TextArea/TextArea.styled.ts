@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 /* Styles */
-export const Textarea = styled.textarea`
+export const TextArea = styled.textarea`
   font-size: 16px;
   line-height: 1.25;
   border-radius: 6px;
