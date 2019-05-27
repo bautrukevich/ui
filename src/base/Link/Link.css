@@ -1,0 +1,26 @@
+.link {
+  font-weight: bold;
+  color: var(--color-dark);
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 60, 65, 0.5);
+}
+
+.link:hover {
+  background-color: rgba(255, 60, 65, 0.25);
+}
+
+.link:focus {
+  border-bottom-color: #ff3c41;
+  background: none;
+  outline-offset: 2px;
+  outline: #52b0ff solid 2px;
+}
+
+.link:visited {
+  border-bottom-color: #b375d4;
+}
+
+.link:visited:hover {
+  background-color: rgba(213, 137, 255, 0.5);
+  border-bottom-color: #d589ff;
+}
