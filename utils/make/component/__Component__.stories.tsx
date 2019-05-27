@@ -5,6 +5,8 @@ import {storiesOf} from '@storybook/react'
 /* Component */
 import {__Component__} from './__Component__'
 
+/* Types */
+
 /* Utils */
 
 /* Styles */
