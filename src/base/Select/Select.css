@@ -16,6 +16,10 @@
   appearance: none;
 }
 
+.select__input_is_multiple {
+  height: auto;
+}
+
 .select__input::placeholder {
   color: var(--color-warm-grey);
 }

@@ -5,6 +5,7 @@ export interface Props {
   className?: string,
   items: Array<OptionType>
   value?: string | number,
+  multiple?: boolean,
   disabled?: boolean,
   placeholder?: string,
 }

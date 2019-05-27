@@ -14,7 +14,7 @@ export const SelectInput = styled.select`
   border: 1px solid var(--color-warm-grey);
   box-sizing: border-box;
   color: var(--color-dark);
-  height: 40px;
+  height: ${props => props.multiple ? 'auto' : '40px'};
   width: 100%;
   background: none;
   appearance: none;

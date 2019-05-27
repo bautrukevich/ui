@@ -40,6 +40,11 @@ storiesOf('Select', module)
       items={ITEMS}
       value='apple'/>
   ))
+  .add('multiple', () => (
+    <Select
+      items={ITEMS}
+      multiple />
+  ))
   .add('disabled', () => (
     <Select
       items={ITEMS}

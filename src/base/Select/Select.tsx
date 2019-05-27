@@ -20,13 +20,14 @@ const ArrowDown = () => (
 import {OptionType, Props} from './Select.types'
 
 /* Component */
-export const Select = ({className, items, value, disabled = false, placeholder}: Props) => (
+export const Select = ({className, items, value, multiple = false, disabled = false, placeholder}: Props) => (
   <Styled.Select>
     <Styled.SelectInput
       className={className}
+      value={value}
+      multiple={multiple}
       disabled={disabled}
-      placeholder={placeholder}
-      value={value}>
+      placeholder={placeholder}>
       {items.map(({value, title, disabled}: OptionType) => (
         <option
           key={value}
@@ -36,6 +37,6 @@ export const Select = ({className, items, value, disabled = false, placeholder}:
         </option>
       ))}
     </Styled.SelectInput>
-    <ArrowDown />
+    {!multiple && <ArrowDown />}
   </Styled.Select>
 )
