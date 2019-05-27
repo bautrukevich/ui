@@ -1,4 +1,5 @@
 /* Vendor types */
+import {ChangeEvent} from 'react'
 
 /* Types */
 export interface Props {
@@ -7,4 +8,5 @@ export interface Props {
   value?: string | number,
   disabled?: boolean,
   placeholder?: string,
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void,
 }

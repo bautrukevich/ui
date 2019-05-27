@@ -12,11 +12,12 @@ import * as Styled from './Input.styled'
 import {Props} from './Input.types'
 
 /* Component */
-export const Input = ({className, value, type = 'text', disabled = false, placeholder}: Props) => (
+export const Input = ({className, value, type = 'text', disabled = false, placeholder, onChange}: Props) => (
   <Styled.Input
     className={className}
     type={type}
     value={value}
     disabled={disabled}
-    placeholder={placeholder} />
+    placeholder={placeholder}
+    onChange={onChange} />
 )
