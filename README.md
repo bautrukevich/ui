@@ -18,10 +18,16 @@ List of available components:
 * `Link`
 * `Select`
 * `TextArea`
+* ...
 
 ```javascript
 import React from 'react'
-import * as UI from '@bautrukevich/ui'
+import {
+  Input,
+  Link,
+  Select,
+  TextArea,
+} from '@bautrukevich/ui'
 
 ...
 ```
