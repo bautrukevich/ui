@@ -9,12 +9,7 @@ import * as Styled from './Input.styled'
 /* Utils */
 
 /* Types */
-export interface Props {
-  className?: string,
-  type?: string,
-  disabled?: boolean,
-  placeholder?: string,
-}
+import {Props} from './Input.types'
 
 /* Component */
 export const Input = ({className, type = 'text', disabled = false, placeholder}: Props) => (
