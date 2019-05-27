@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+* `AUTHORS.txt` and `CHANGELOG.md`
 * Base components: `Input`, `Link`.
 * Command line utility to make a new component with command: `npm run make:component <name>`
 
