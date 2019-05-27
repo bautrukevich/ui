@@ -12,6 +12,13 @@ npm i @bautrukevich/ui --save
 
 ## Usage
 
+List of available components:
+
+* `Input`
+* `Link`
+* `Select`
+* `TextArea`
+
 ```javascript
 import React from 'react'
 import * as UI from '@bautrukevich/ui'
