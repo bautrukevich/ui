@@ -14,6 +14,14 @@ storiesOf('Input', module)
   .add('default', () => (
     <Input />
   ))
+  .add('with value', () => (
+    <Input value='Some text'/>
+  ))
+  .add('type – number', () => (
+    <Input
+      type='number'
+      value={18} />
+  ))
   .add('disabled', () => (
     <Input disabled />
   ))
