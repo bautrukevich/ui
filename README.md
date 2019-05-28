@@ -14,6 +14,7 @@ npm i @bautrukevich/ui --save
 
 List of available components:
 
+* `Button`
 * `Input`
 * `Link`
 * `Select`
@@ -23,6 +24,7 @@ List of available components:
 ```javascript
 import React from 'react'
 import {
+  Button,
   Input,
   Link,
   Select,
