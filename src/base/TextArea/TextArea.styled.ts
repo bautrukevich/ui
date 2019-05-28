@@ -1,9 +1,14 @@
 /* Vendors */
 import styled from 'styled-components'
 
+/* Types */
+
+/* Utils */
+
 /* Styles */
 export const TextArea = styled.textarea`
-  font-size: 16px;
+  font-size: var(--font-size);
+  font-family: var(--font-sans);
   line-height: 1.25;
   border-radius: 6px;
   padding: 9px 12px;

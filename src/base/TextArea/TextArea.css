@@ -1,5 +1,6 @@
 .textarea {
-  font-size: 16px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size);
   line-height: 1.25;
   border-radius: 6px;
   padding: 9px 12px;
