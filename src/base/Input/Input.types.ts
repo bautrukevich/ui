@@ -4,6 +4,7 @@ import {ChangeEvent} from 'react'
 /* Types */
 export interface Props {
   className?: string,
+  name: string,
   type?: 'text' | 'password' | 'number',
   value?: string | number,
   disabled?: boolean,
