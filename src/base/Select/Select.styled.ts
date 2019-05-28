@@ -1,13 +1,18 @@
 /* Vendors */
 import styled from 'styled-components'
 
+/* Types */
+
+/* Utils */
+
 /* Styles */
 export const Select = styled.div`
   position: relative;
 `
 
 export const SelectInput = styled.select`
-  font-size: 16px;
+  font-size: var(--font-size);
+  font-family: var(--font-sans);
   line-height: 1.25;
   border-radius: 6px;
   padding: 9px 26px 9px 12px;
@@ -16,7 +21,7 @@ export const SelectInput = styled.select`
   color: var(--color-dark);
   height: ${props => props.multiple ? 'auto' : '40px'};
   width: 100%;
-  background: none;
+  background: #fff;
   appearance: none;
   
   &::placeholder {
