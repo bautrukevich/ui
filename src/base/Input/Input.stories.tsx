@@ -15,15 +15,29 @@ storiesOf('Input', module)
     <Input />
   ))
   .add('with value', () => (
-    <Input value='Some text'/>
+    <Input
+      value='Some text'
+      onChange={() => {}} />
   ))
   .add('type – number', () => (
     <Input
       type='number'
-      value={18} />
+      value={18}
+      onChange={() => {}} />
+  ))
+  .add('type – password', () => (
+    <Input
+      type='password'
+      value='p@$$w0rd'
+      onChange={() => {}} />
   ))
   .add('disabled', () => (
     <Input disabled />
+  ))
+  .add('readOnly', () => (
+    <Input
+      value='Some text'
+      readOnly />
   ))
   .add('with placeholder', () => (
     <Input placeholder='Field name here or tip' />
