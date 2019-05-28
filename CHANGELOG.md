@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 * `AUTHORS.txt` and `CHANGELOG.md`
-* Base components: `Button`, `Input`, `Link`, `Select`, `TextArea`.
+* Base components: `Button`, `FormControl`, `Input`, `Link`, `Select`, `TextArea`.
 * Command line utility to make a new component with command: `npm run make:component <name>`
 
 [Unreleased]: https://github.com/uploadcare/uploadcare-upload-client/compare/v1.0.0...HEAD
