@@ -1,4 +1,5 @@
 .link {
+  font-family: var(--font-sans);
   font-weight: bold;
   color: var(--color-dark);
   text-decoration: none;

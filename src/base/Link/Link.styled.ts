@@ -1,8 +1,14 @@
 /* Vendors */
 import styled from 'styled-components'
 
+/* Types */
+
+/* Utils */
+
 /* Styles */
 export const Link = styled.a`
+  font-size: var(--font-size);
+  font-family: var(--font-sans);
   font-weight: bold;
   color: var(--color-dark);
   text-decoration: none;
