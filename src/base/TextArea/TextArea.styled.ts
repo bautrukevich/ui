@@ -16,6 +16,7 @@ export const TextArea = styled.textarea`
   box-sizing: border-box;
   color: var(--color-dark);
   width: 100%;
+  resize: vertical;
   
   &::placeholder {
     color: var(--color-warm-grey);
