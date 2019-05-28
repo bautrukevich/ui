@@ -36,7 +36,7 @@ body {
 }
 
 body {
-  font-family: var(--font-headings);
+  font-family: var(--font-sans);
   font-size: var(--font-size);
   line-height: var(--line-height);
   -webkit-font-smoothing: antialiased;
