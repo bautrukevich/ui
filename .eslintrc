@@ -10,5 +10,9 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
-  "extends": ["plugin:@typescript-eslint/recommended"]
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "@typescript-eslint/indent": ["error", 2],
+    "no-unused-vars": "off"
+  }
 }
