@@ -21,6 +21,8 @@
   --color-light-blue: #52b0ff;
   --color-purple: #b375d4;
   --color-light-purple: #d589ff;
+
+  --color-outline: var(--color-light-blue);
 }
 
 *, html {

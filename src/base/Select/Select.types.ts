@@ -16,5 +16,5 @@ export interface Props {
 export type OptionType = {
   value: string | number,
   title: string,
-  disabled?: boolean
+  disabled?: boolean,
 }

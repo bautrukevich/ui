@@ -44,7 +44,7 @@
     "prebuild": "npm run clean",
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .ts",
     "test": "jest",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook"
