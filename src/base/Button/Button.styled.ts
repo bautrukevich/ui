@@ -1,8 +1,7 @@
 /* Vendors */
 import styled, {css} from 'styled-components'
-
 /* Types */
-import {ButtonColorEnum, ButtonSizeEnum, Props} from './Button.types'
+import {ButtonColorEnum, ButtonSizeEnum, ButtonVisualEnum, Props} from './Button.types'
 
 /* Utils */
 /**
@@ -26,12 +25,31 @@ const getButtonSizeStyle = ({size}: Props) => {
   }
 }
 
+const getVisualStyle = ({visual}: Props) => visual && visual === ButtonVisualEnum.rounded
+  && css`
+      border-radius: 48px;
+      &:focus {
+        &:before {
+          border-radius: 48px;
+        }
+      }
+    `
+
 /**
  * Get styles for different button colors.
  * @param color
  */
 const getButtonColorStyle = ({color}: Props) => {
   switch (color) {
+    case ButtonColorEnum.brand:
+      return css`
+        --button-color: var(--color-dark);
+        --button-outline-color: #52b0ff;
+        
+        --button-back-color: var(--color-brand);
+        --button-hover-back-color: #FDF465;
+        --button-active-back-color: var(--color-brand);  
+      `
     case ButtonColorEnum.primary:
       return css`
         --button-color: #fff;
@@ -140,4 +158,5 @@ export const Button = styled.button`
   
   ${getButtonSizeStyle}
   ${getButtonColorStyle}
+  ${getVisualStyle}
 `

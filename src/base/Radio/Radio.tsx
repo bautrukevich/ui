@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './Radio.styled'
@@ -12,7 +12,7 @@ import * as Styled from './Radio.styled'
 import {Props, RadioType} from './Radio.types'
 
 /* Component */
-export const Radio = ({className, name, items, value, isVertical = false, onChange}: Props) => (
+export const Radio = ({className, name, items, value, isVertical = false, onChange}: Props): ReactElement => (
   <Styled.RadioGroup
     className={className}
     isVertical={isVertical}>

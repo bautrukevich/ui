@@ -9,7 +9,6 @@ import styled from 'styled-components'
 export const CheckboxLabel = styled.label`
   font-family: var(--font-sans);
   font-size: var(--font-size);
-  font-weight: bold;
   line-height: 1;
   position: relative;
   cursor: pointer;
@@ -21,7 +20,23 @@ export const CheckboxLabel = styled.label`
 `
 
 export const CheckboxToggle = styled.span`
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  width: 18px;
+  height: 18px;
   
+  &:before {
+    content: '';
+    border-radius: 4px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 2px solid var(--color-warm-grey);
+  }
 `
 
 export const CheckboxInput = styled.input`
@@ -30,28 +45,28 @@ export const CheckboxInput = styled.input`
   width: 0;
   height: 0;
 
-  & ~ span {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
-    width: 18px;
-    height: 18px;
-  }
-
-  & ~ span:before {
-    content: '';
-    border-radius: 6px;
-    margin-right: 8px;
-    display: inline-block;
-    vertical-align: text-top;
-    width: 16px;
-    height: 16px;
-    background: white;
-    border: 2px solid var(--color-blue);
-  }
+  //& ~ span {
+  //  position: relative;
+  //  cursor: pointer;
+  //  padding: 0;
+  //  width: 18px;
+  //  height: 18px;
+  //}
+  //
+  //& ~ span:before {
+  //  content: '';
+  //  border-radius: 4px;
+  //  margin-right: 8px;
+  //  display: inline-block;
+  //  vertical-align: text-top;
+  //  width: 16px;
+  //  height: 16px;
+  //  background: white;
+  //  border: 2px solid var(--color-warm-grey);
+  //}
 
   &:hover ~ span:before {
-    background: var(--color-light-blue);
+    border: 2px solid var(--color-light-blue);
   }
   
   &:focus ~ span:before {
@@ -59,7 +74,7 @@ export const CheckboxInput = styled.input`
   }
 
   &:checked ~ span:before {
-    background: var(--color-blue);
+    background: #fff;
   }
   
   &:disabled ~ span {
@@ -78,16 +93,34 @@ export const CheckboxInput = styled.input`
     position: absolute;
     left: 5px;
     top: 9px;
-    background: white;
+    background: var(--color-dark);
     width: 2px;
     height: 2px;
     box-shadow: 
-      2px 0 0 white,
-      4px 0 0 white,
-      4px -2px 0 white,
-      4px -4px 0 white,
-      4px -6px 0 white,
-      4px -8px 0 white;
+      2px 0 0 var(--color-dark),
+      4px 0 0 var(--color-dark),
+      4px -2px 0 var(--color-dark),
+      4px -4px 0 var(--color-dark),
+      4px -6px 0 var(--color-dark),
+      4px -8px 0 var(--color-dark);
+    transform: rotate(45deg);
+  }
+  
+  &:hover ~ span:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: var(--color-dark);
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      2px 0 0 var(--color-dark),
+      4px 0 0 var(--color-dark),
+      4px -2px 0 var(--color-dark),
+      4px -4px 0 var(--color-dark),
+      4px -6px 0 var(--color-dark),
+      4px -8px 0 var(--color-dark);
     transform: rotate(45deg);
   }
 `

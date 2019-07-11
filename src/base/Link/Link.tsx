@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './Link.styled'
@@ -12,7 +12,7 @@ import * as Styled from './Link.styled'
 import {Props} from './Link.types'
 
 /* Component */
-export const Link = ({className, to, children}: Props) => {
+export const Link = ({className, to, children}: Props): ReactElement => {
   return (
     <Styled.Link
       className={className}

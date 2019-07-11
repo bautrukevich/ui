@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './Checkbox.styled'
@@ -12,7 +12,7 @@ import * as Styled from './Checkbox.styled'
 import {Props} from './Checkbox.types'
 
 /* Component */
-export const Checkbox = ({className, name, value, children, onChange, checked = false, disabled = false}: Props) => (
+export const Checkbox = ({className, name, value, children, onChange, checked = false, disabled = false}: Props): ReactElement => (
   <Styled.CheckboxLabel className={className}>
     <Styled.CheckboxInput
       type='checkbox'

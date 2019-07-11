@@ -16,28 +16,33 @@ export const TextArea = styled.textarea`
   box-sizing: border-box;
   color: var(--color-dark);
   width: 100%;
+  margin-bottom: 0;
   resize: vertical;
-  
+  min-height: 96px;
+
   &::placeholder {
     color: var(--color-warm-grey);
   }
-  
+
   &:hover {
     border: 2px solid var(--color-light-blue);
-    padding: 8px 12px;
+    padding: 8px 11px;
+    min-height: 96px;
   }
-  
+
   &:focus {
     outline: none;
     border: 2px solid var(--color-blue);
-    padding: 8px 12px;
+    padding: 8px 11px;
+    min-height: 96px;
   }
-  
+
   &:disabled {
     background-color: var(--color-lighten);
     color: var(--color-grey);
-    padding: 8px 12px;
-    
+    border-style: dashed;
+    padding: 9px 12px;
+
     &:hover {
       background-color: #f6f6f6;
       color: var(--color-grey);

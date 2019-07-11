@@ -2,8 +2,8 @@
 import {ReactChildren} from 'react'
 
 /* Types */
-export type Props = {
-  className?: string,
-  to?: string,
-  children: string | ReactChildren,
+export interface Props {
+  className?: string;
+  to?: string;
+  children: string | ReactChildren;
 }

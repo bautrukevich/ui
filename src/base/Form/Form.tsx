@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './Form.styled'
@@ -12,7 +12,7 @@ import * as Styled from './Form.styled'
 import {Props} from './Form.types'
 
 /* Component */
-export const Form = ({className}: Props) => (
+export const Form = ({className, children}: Props): ReactElement => (
   <Styled.Form
-    className={className} />
+    className={className}>{children}</Styled.Form>
 )

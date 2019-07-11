@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './TextArea.styled'
@@ -12,7 +12,7 @@ import * as Styled from './TextArea.styled'
 import {Props} from './TextArea.types'
 
 /* Component */
-export const TextArea = ({className, value, disabled = false, placeholder, onChange}: Props) => (
+export const TextArea = ({className, value, disabled = false, placeholder, onChange}: Props): ReactElement => (
   <Styled.TextArea
     className={className}
     disabled={disabled}

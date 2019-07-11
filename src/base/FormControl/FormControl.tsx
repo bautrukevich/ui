@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './FormControl.styled'
@@ -12,13 +12,15 @@ import * as Styled from './FormControl.styled'
 import {Props} from './FormControl.types'
 
 /* Component */
-export const FormControl = ({className, label, caption, children}: Props) => (
+export const FormControl = ({className, label, caption, children}: Props): ReactElement => (
   <Styled.FormControl
     className={className}>
     <Styled.FormLabel>
-      {label}
+      <Styled.FormLabelText>
+        {label}
+      </Styled.FormLabelText>
+      {children}
     </Styled.FormLabel>
-    {children}
     <Styled.FormCaption>
       {caption}
     </Styled.FormCaption>

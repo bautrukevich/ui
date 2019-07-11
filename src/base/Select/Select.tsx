@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './Select.styled'
@@ -20,7 +20,7 @@ const ArrowDown = () => (
 import {OptionType, Props} from './Select.types'
 
 /* Component */
-export const Select = ({className, items, value, multiple = false, disabled = false, placeholder, onChange}: Props) => (
+export const Select = ({className, items, value, multiple = false, disabled = false, placeholder, onChange}: Props): ReactElement => (
   <Styled.Select>
     <Styled.SelectInput
       className={className}

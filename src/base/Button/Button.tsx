@@ -1,5 +1,5 @@
 /* Vendors */
-import React from 'react'
+import React, {ReactElement} from 'react'
 
 /* Styles */
 import * as Styled from './Button.styled'
@@ -18,15 +18,17 @@ export const Button = (
     type = 'button',
     color = ButtonColorEnum.primary,
     size = ButtonSizeEnum.normal,
+    visual,
     disabled = false,
     onClick,
     children
-  }: Props) => (
+  }: Props): ReactElement => (
   <Styled.Button
     className={className}
     type={type}
     color={color}
     size={size}
+    visual={visual}
     disabled={disabled}
     onClick={onClick}>
     {children}
