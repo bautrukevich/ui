@@ -54,7 +54,7 @@
     "dev": "rollup -c -w",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "test": "jest",
+    "test": "echo \"No test specified\"",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook"
   },
