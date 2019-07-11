@@ -10,9 +10,19 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
-  "extends": ["plugin:@typescript-eslint/recommended"],
+  "extends": ["plugin:@typescript-eslint/recommended", "plugin:react/recommended"],
   "rules": {
     "@typescript-eslint/indent": ["error", 2],
-    "no-unused-vars": "off"
+    "@typescript-eslint/explicit-function-return-type": ["off"],
+    "@typescript-eslint/explicit-member-accessibility": ["error", {
+      "accessibility": "explicit",
+      "overrides": {
+        "accessors": "explicit",
+        "constructors": "no-public",
+        "methods": "no-public",
+        "properties": "no-public",
+        "parameterProperties": "no-public"
+      }
+    }]
   }
 }

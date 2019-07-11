@@ -1,7 +1,12 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import typescript from 'rollup-plugin-typescript';
-import pkg from './package.json';
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import typescript from 'rollup-plugin-typescript'
+import builtins from 'rollup-plugin-node-builtins'
+import pkg from './package.json'
+
+import * as react from 'react'
+import * as reactDom from 'react-dom'
+import * as reactIs from 'react-is'
 
 export default [
   // browser-friendly UMD build
@@ -13,25 +18,17 @@ export default [
       format: 'umd'
     },
     plugins: [
-      resolve(),   // so Rollup can find deps
+      resolve({preferBuiltins: true}),   // so Rollup can find deps
+      builtins(),
       commonjs({
         include: 'node_modules/**',
-        // namedExports: {
-        //   'node_modules/react/index.js': [
-        //     'cloneElement',
-        //     'createContext',
-        //     'Component',
-        //     'createElement'
-        //   ],
-        //   'node_modules/react-dom/index.js': ['render', 'hydrate'],
-        //   'node_modules/react-is/index.js': [
-        //     'isElement',
-        //     'isValidElementType',
-        //     'ForwardRef'
-        //   ]
-        // }
+        namedExports: {
+          'react': Object.keys(react),
+          'react-dom': Object.keys(reactDom),
+          'react-is': Object.keys(reactIs),
+        }
       }),  // so Rollup can convert deps to an ES module
-      typescript() // so Rollup can convert TypeScript to JavaScript
+      typescript(), // so Rollup can convert TypeScript to JavaScript,
     ]
   },
 
@@ -45,7 +42,7 @@ export default [
     input: 'src/index.ts',
     external: ['react', 'react-dom', 'styled-components'],
     plugins: [
-      typescript() // so Rollup can convert TypeScript to JavaScript
+      typescript(), // so Rollup can convert TypeScript to JavaScript
     ],
     output: [
       { file: pkg.module, format: 'es' }

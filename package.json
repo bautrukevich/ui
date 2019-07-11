@@ -11,6 +11,8 @@
     "@storybook/addon-links": "^5.0.11",
     "@storybook/addons": "^5.0.11",
     "@storybook/react": "^5.0.11",
+    "@types/chalk": "^2.2.0",
+    "@types/commander": "^2.12.2",
     "@types/jest": "^24.0.13",
     "@types/node": "^12.0.2",
     "@types/react": "^16.8.17",
@@ -22,12 +24,18 @@
     "@typescript-eslint/parser": "^1.9.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
     "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
     "jest": "^24.8.0",
     "react-docgen-typescript-loader": "^3.1.0",
+    "react-is": "^16.8.6",
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-license": "^0.8.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-size-snapshot": "^0.8.0",
     "rollup-plugin-terser": "^4.0.4",
@@ -45,6 +53,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
     "test": "jest",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook"
@@ -53,10 +62,6 @@
     "dist"
   ],
   "dependencies": {
-    "@types/chalk": "^2.2.0",
-    "@types/commander": "^2.12.2",
-    "chalk": "^2.4.2",
-    "commander": "^2.20.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
