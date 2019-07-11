@@ -5,6 +5,6 @@ import {readdirSync} from 'fs'
  * @param path
  * @return Array<string>
  */
-export const getFiles = (path: string): Array<string> => {
+export const getFiles = (path: string): string[] => {
   return readdirSync(path)
 }
