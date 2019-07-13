@@ -1,5 +1,7 @@
 # UI
 
+[![Build Status](https://travis-ci.com/bautrukevich/ui.svg?token=zqvzPAhB3M2VzdwprpCp&branch=master)](https://travis-ci.com/bautrukevich/ui)
+
 UI is a package.
 
 ## Installation
