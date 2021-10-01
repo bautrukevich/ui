@@ -1825,10 +1825,10 @@
   resolved "https://registry.npmjs.org/@types/storybook__addon-actions/-/storybook__addon-actions-3.4.2.tgz"
   integrity sha512-CWxGz2pXav9PHcwrtXmkuH+xJL7sAu2AmIGEbkdT3Xs5jzBPZUEDEN//ZF7o6IOPP/tdXU37K1hrVMt9TDO0Bw==
 
-"@types/storybook__addon-links@^3.3.4":
-  version "3.3.4"
-  resolved "https://registry.npmjs.org/@types/storybook__addon-links/-/storybook__addon-links-3.3.4.tgz"
-  integrity sha512-vKYBgSB4hjjmxFN+wDTfrwXYHcduzMkvXNReiMxQNwlUmdHrcvonCTWNux0qQ/C5MRppi1u8Iz2ZkHK0odc8cQ==
+"@types/storybook__addon-links@3.3.5":
+  version "3.3.5"
+  resolved "https://registry.npmjs.org/@types/storybook__addon-links/-/storybook__addon-links-3.3.5.tgz"
+  integrity sha512-h+8Kb+uZv4/uuWD+K5rku8aRxdl6yjDJrFzbcGwwdZt6IwYGK9G8PmkP+6Hv+N7HMOuyhrZPiLL//qVFWDL/0Q==
   dependencies:
     "@types/react" "*"
 
