@@ -44,7 +44,7 @@
     "ts-jest": "^24.0.2",
     "ts-node": "^7.0.1",
     "tslib": "^1.9.3",
-    "typescript": "^3.4.5"
+    "typescript": "3.9.10"
   },
   "scripts": {
     "make:component": "ts-node ./utils/make/index.ts component",
