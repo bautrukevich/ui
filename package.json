@@ -6,7 +6,7 @@
   "module": "dist/ui.esm.js",
   "browser": "dist/ui.umd.js",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/core": "7.19.1",
     "@storybook/addon-actions": "^5.0.11",
     "@storybook/addon-links": "^5.0.11",
     "@storybook/addons": "^5.0.11",
@@ -23,7 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
     "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "8.2.5",
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "eslint": "^5.16.0",
