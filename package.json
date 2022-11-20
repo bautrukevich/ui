@@ -33,7 +33,7 @@
     "react-is": "^16.8.6",
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-license": "^0.8.1",
+    "rollup-plugin-license": "^0.14.0",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-node-resolve": "^4.0.0",
